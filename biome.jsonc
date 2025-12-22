@@ -12,7 +12,10 @@
 			"!**/build",
 			"!**/node_modules",
 			"!**/.turbo",
-			"!**/.github"
+			"!**/.github",
+			"!**/dist",
+			"!**/generated",
+			"!packages/database/src/prisma"
 		]
 	},
 	"formatter": {
