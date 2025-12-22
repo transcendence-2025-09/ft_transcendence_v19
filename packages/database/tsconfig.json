@@ -9,6 +9,8 @@
 		"module": "esnext",
 		"moduleResolution": "bundler",
 		"declaration": true,
+		"outDir": "dist",
+		"rootDir": "src",
 		"declarationMap": true,
 		"paths": {
 			"@prisma/client": ["./src/prisma/client"]
@@ -22,5 +24,6 @@
 		"noUncheckedSideEffectImports": true,
 		"moduleDetection": "force"
 	},
+	"include": ["src"],
 	"exclude": ["node_modules"]
 }
