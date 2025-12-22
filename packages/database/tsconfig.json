@@ -1,0 +1,26 @@
+{
+	// Visit https://aka.ms/tsconfig to read more about this file
+	"compilerOptions": {
+		"strict": true,
+		"target": "es2023",
+		"esModuleInterop": true,
+
+		"skipLibCheck": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"declaration": true,
+		"declarationMap": true,
+		"paths": {
+			"@prisma/client": ["./src/prisma/client"]
+		},
+
+		"sourceMap": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"noUncheckedSideEffectImports": true,
+		"moduleDetection": "force"
+	},
+	"exclude": ["node_modules"]
+}
