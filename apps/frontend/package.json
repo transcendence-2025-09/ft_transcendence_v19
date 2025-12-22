@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "remix vite:dev",
+		"build": "remix vite:build",
 		"typecheck": "tsc --noEmit"
 	},
 	"packageManager": "pnpm@10.26.1",
