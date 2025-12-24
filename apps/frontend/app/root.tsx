@@ -14,7 +14,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Meta />
 				<Links />
 			</head>
-			<body className="bg-[#F0F2F4] text-[#4e5889]">
+			<body>
 				<header>
 					<h1>ft_transcendence_v19</h1>
 				</header>
