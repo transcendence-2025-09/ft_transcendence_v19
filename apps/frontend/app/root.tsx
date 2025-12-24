@@ -1,20 +1,31 @@
-import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
+import {
+	Links,
+	Meta,
+	Outlet,
+	Scripts,
+	ScrollRestoration,
+} from "@remix-run/react";
 
-export default function App() {
+export function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		// biome-ignore lint/a11y/useHtmlLang: html
-		<html>
+		<html lang="ja">
 			<head>
-				<link rel="icon" href="data:image/x-icon;base64,AA" />
 				<Meta />
 				<Links />
 			</head>
 			<body>
-				<h1>Hello world!</h1>
-				<Outlet />
+				<header>
+					<h1>ft_transcendence_v19</h1>
+				</header>
+				{children}
 
+				<ScrollRestoration />
 				<Scripts />
 			</body>
 		</html>
 	);
+}
+
+export default function App() {
+	return <Outlet />;
 }
